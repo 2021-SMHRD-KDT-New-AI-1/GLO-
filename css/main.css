@@ -104,7 +104,7 @@ p {
     position: fixed;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: transparent;
     /* 홈 화면 만들고 수정 : color */
@@ -117,11 +117,15 @@ p {
 
 } */
 .navbar__logo {
+    width: 33%;
     font-size: var(--font-medium);
     font-weight: var(--weight-smei-bold);
 }
 .navbar__menu {
+    width: 33%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .navbar__menu__item {
     padding: 8px 12px;
@@ -134,14 +138,9 @@ p {
     border: 1px solid var(--color-white);
     background-color: var(--color-semi-light-green);
 }
-/* .navbar__btn__login {
-    padding: 8px 12px;
-    margin: 0px 16px;
-    font-size: var(--font-regular);
-    color: var(--color-white);
-    border: 1px solid transparent;
-    border-radius: var(--size-border-radius);
-} */
+.navbar__btns {
+    width: 33%;
+}
 .navbar__btn__login,
 .navbar__btn__signup {
     padding: 8px 12px;
