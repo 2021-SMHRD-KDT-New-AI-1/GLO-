@@ -104,7 +104,7 @@ p {
     position: fixed;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: transparent;
     /* 홈 화면 만들고 수정 : color */
@@ -117,12 +117,12 @@ p {
 
 } */
 .navbar__logo {
-    width: 33%;
+    width: 30%;
     font-size: var(--font-medium);
     font-weight: var(--weight-smei-bold);
 }
 .navbar__menu {
-    width: 33%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,12 +139,12 @@ p {
     background-color: var(--color-semi-light-green);
 }
 .navbar__btns {
-    width: 33%;
+    width: 30%;
 }
 .navbar__btn__login,
 .navbar__btn__signup {
     padding: 8px 12px;
-    margin: 0px 16px;
+    margin: 0px 12px;
     font-size: var(--font-regular);
     color: var(--color-light-green);
     background-color: var(--color-white);
@@ -180,19 +180,32 @@ p {
         right: 28px;
     }
     #navbar {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: flex-start;
         background-color: var(--color-light-green);
     }
     .navbar__logo {
+        display: flex;
+        justify-content: flex-start;
         margin-left: 16px;
     }
     .navbar__menu,
     .navbar__btns {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
         text-align: center;
         width: 100%;
         display: none;
+    }
+    .navbar__menu {
+        width: 96%;
+        margin: 12px 16px 12px 13px;
+    }
+    .navbar__menu__item:hover {
+        width: 100%;
     }
     .navbar__menu.active,
     .navbar__btns.active {
