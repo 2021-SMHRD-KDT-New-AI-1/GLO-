@@ -200,12 +200,11 @@ p {
         width: 100%;
         display: none;
     }
-    .navbar__menu {
-        width: 96%;
-        margin: 12px 16px 12px 13px;
-    }
+    /* .navbar__menu {
+        width: %;
+    } */
     .navbar__menu__item:hover {
-        width: 100%;
+        width: 96%;
     }
     .navbar__menu.active,
     .navbar__btns.active {
