@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,9 @@
     <title>GLO; | main</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="shortcut icon" href="../img/logo1.PNG">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -24,7 +27,9 @@
         </ul>
 
         <div class="navbar__btns">
-            <button class="navbar__btn__login">Login</button>
+            <button class="navbar__btn__login">
+                <a href="login.html">Login</a>
+            </button>
             <button class="navbar__btn__signup">Sign up</button>
         </div>
 
@@ -32,11 +37,182 @@
             <i class="fas fa-bars"></i>
         </button>
 
-        <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+    </section>
+
+    <!-- title -->
+    <section id="title">
+
+        <div class="title__container">
+            <span class="title__glo">GLO;</span>
+            <div class="title__arrow" data-link="#gloIs"><i class="fas fa-arrow-down" data-link="#gloIs"></i></div>
+        </div>
 
     </section>
 
-    <script src="../js/navbar.js"></script>
+    <!-- gloIs -->
+    <section id="gloIs">
+
+        <div class="section__container">
+
+            <div class="section__titleBox">
+                <h1 class="gloIs__title">GLO; 는 "친구 같은" AI chat-bot 입니다</h1>
+                <span class="gloIs__intro">AI 챗봇 GLO;는 친구의 말을 분석하여 공감하고 대화를 하는 봇입니다</span>
+                <span class="gloIs__intro"><br>GLO; 에게 말을 걸어보세요</span>
+            </div>
+
+            <div class="gloIs__img"></div>
+
+            <div class="gloIs__btnBox">
+                <button class="gloIs__loginBtn"><a class="gloIs__toLogin" href="login.html">더 알아보기</a></button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- survey -->
+    <section id="survey">
+
+        <div class="section__container">
+
+            <div class="section__titleBox">
+                <h1 class="survey__title">설문조사를 먼저 진행해주세요</h1>
+                <span class="survey__intro1">GLO; 는 진행한 설문조사를 바탕으로 대화를 분석합니다</span>
+                <span class="survey__intro2"><br>(뭐라고 할까 이건 없어도 됨)</span>
+            </div>
+
+            <div class="survey__imgBox">
+                <div class="survey__img1"></div>
+                <div class="survey__img2"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+     <!-- recommendation -->
+    <section id="recommendation">
+
+        <div class="section__container__reco">
+
+            <div class="section__titleBox">
+                <h1 class="reco__title">GLO; 의 추천을 받아보세요</h1>
+                <span class="reco__intro1">여러분과의 대화를 통해 GLO;가 추천을 해줍니다</span>
+                <span class="reco__intro2"><br>GLO; 가 추천해주는 다양한 컨텐츠를 즐겨보세요</span>
+            </div>
+
+            <div class="reco__contentBox">
+
+                <div class="reco__content">
+                    <div class="content__icon"><i class="fas fa-music"></i></div>
+                    <span class="content__span">음악을 들으며<br>텐션을 올려봐요</span>
+                </div>
+
+                <div class="reco__content">
+                    <div class="content__icon"><i class="fab fa-youtube"></i></div>
+                    <span class="content__span">영상을 보며<br>뭐라도 좀 해보세요</span>
+                </div>
+
+                <div class="reco__content">
+                    <div class="content__icon"><i class="fas fa-book"></i></div>
+                    <span class="content__span">혼자만의 조용한<br>시간을 가지세요</span>
+                </div>
+
+                <div class="reco__content">
+                    <div class="content__icon"><i class="fas fa-plane"></i></div>
+                    <span class="content__span">잠시 여행을<br>다녀와도 좋아요</span>
+                </div>
+
+            </div>
+
+            <div class="h2__box">
+                <h2>이 모든 것을 GLO; 가 여러분께 추천해드려요</h2>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- myPage -->
+    <!-- <section id="myPage">
+
+        <div class="section__container">
+
+            <div class="section__titleBox">
+                <h1 class="myPage__title">개인 페이지에서 데이터를 확인 할 수 있어요</h1>
+                <span class="myPage__intro">GLO; 와 했던 대화들을 이쁘게 정리해요</span>
+                <span class="myPage__intro">(이 section은 진짜 뭐라고 할 지 모르겠음)</span>
+            </div>
+
+            <div class="myPage__imgBox">
+
+                <div class="myPage__img1">
+                    <div class="myPage__img"></div>
+                    <span class="myPage__img__des"></span>
+                </div>
+
+                <div class="myPage__img2">
+                    <div class="myPage__img"></div>
+                    <span class="myPage__img__des"></span>
+                </div>
+
+                <div class="myPage__img3">
+                    <div class="myPage__img"></div>
+                    <span class="myPage__img__des"></span>
+                </div>
+
+                <div class="myPage__img4">
+                    <div class="myPage__img"></div>
+                    <span class="myPage__img__des"></span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section> -->
+
+    <!-- android -->
+    <section id="android">
+
+        <div class="section__container">
+
+            <div class="section__titleBox">
+                <h1 class="and__title">안드로이드 폰에서도 GLO; 를 만날 수 있어요</h1>
+                <span class="and__intro1">어디서든 GLO;와 함께</span>
+                <a class="and__link" href="#"><br>(플레이스토어 링크)</a>
+            </div>
+
+            <div class="and__imgBox"></div>
+
+            <div class="and__icon"><i class="fab fa-android"></i></div>
+
+        </div>
+
+    </section>
+
+     <!-- footer -->
+    <section id="footer">
+
+        <div class="section__container">
+
+            <div class="section__titleBox">
+                <h1 class="footer__title">GLO; 가 도와드릴께요</h1>
+                <span class="footer__intro1">어디서든 GLO;와 함께</span>
+                <span class="footer__intro2">어디서든 GLO;와 함께</span>
+            </div>
+
+            <div class="gloIs__btnBox">
+                <button class="gloIs__loginBtn"><a class="gloIs__toLogin" href="login.html">더 알아보기</a></button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="../js/navbar.js" defer></script>
+    <script src="../js/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
