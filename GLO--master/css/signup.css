@@ -66,9 +66,8 @@ section {
     margin: auto;
 }
 .section__container {
-    padding: 50px 400px;
+    padding: 50px 150px;
     max-width: 1200px;
-    width: 1200px;
     margin: auto;
     height: 80vh;
     display: flex;
@@ -76,7 +75,8 @@ section {
     justify-content: center;
     align-items: center;
     background-color: #eeeeee;
-    opacity: .9;
+    border-radius: 40px;
+    box-shadow: 0 100px 100px rgba(0, .2, .2, .5);
 }
 /* 일단 다른것들 상황 다 봐보고 */
 /* .section__titleBox {
@@ -86,9 +86,9 @@ section {
 /* Typography */
 
 h1 {
-    font-size: var(--font-large);
+    font-size: 32px;
     font-weight: var(--weight-bold);
-    color: var(--color-semi-dark-green);
+    color: var(--color-light-green);
     margin: 16px 0px;
 }
 h2 {
@@ -121,11 +121,12 @@ span {
     margin-bottom: 48px;
 }
 .signup__form {
-    width: 100%;
+    width: 130%;
 }
 .form__input {
     display: flex;
     flex-direction: column;
+    margin-top: 22px;
 }
 .form__input input {
     height: 48px;
@@ -134,7 +135,7 @@ span {
     border: none;
     outline: none;
     font-size: 16px;
-    border-bottom: 2px solid #006365;
+    border-bottom: 2px solid var(--color-light-green);
 }
 .tit {
     display: flex;
@@ -144,23 +145,22 @@ span {
 .form__btn {
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 24px;
+    margin-bottom: 36px;
 }
 .btn {
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: flex-start;
 }
 .submit__btn {
     margin-top: 24px;
-    background: rgb(25,162,163);
-    background: linear-gradient(90deg, rgba(25,162,163,1) 63%, rgba(0,99,101,1) 80%, rgba(0,42,45,1) 100%);
+    background: var(--color-light-green);
     border: 1px solid #eeeeee;
-    border-radius: 5px;
+    border-radius: 12px;
     cursor: pointer;
     width: 264px;
     height: 48px;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 600;
     color: #eeeeee;
     transition: 0.3s ease-in-out;
