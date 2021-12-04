@@ -192,7 +192,7 @@ span {
 /* header */
 
 .header__tit {
-    margin-top: 320px;
+    margin-top: 120px;
     margin-bottom: 168px;
 }
 .president__recos {
@@ -250,7 +250,7 @@ span {
     cursor: pointer;
 }
 .more__recos {
-    margin-top: 24px;
+    margin: 124px 0px;
     background: rgb(25,162,163);
     background: linear-gradient(90deg, rgba(25,162,163,1) 63%, rgba(0,99,101,1) 80%, rgba(0,42,45,1) 100%);
     border: none;
@@ -282,9 +282,12 @@ span {
 .menu__lists {
     display: flex;
 }
+.list {
+    margin-right: 24px;
+}
 .list a {
     font-size: var(--font-regular);
-    font-weight: var(--weight-regular);
+    font-weight: var(--weight-semi-bold);
     color: var(--color-semi-dark-green);
     margin-right:24px;
 }
