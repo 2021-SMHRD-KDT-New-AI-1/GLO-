@@ -277,7 +277,7 @@ span {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 48px;
+    margin: 120px 0px 48px 0px;
 }
 .menu__lists {
     display: flex;
