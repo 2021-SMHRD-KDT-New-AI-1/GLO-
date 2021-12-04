@@ -27,6 +27,13 @@ body {
     justify-content: center;
     align-items: center;
 }
+h1 {
+    cursor: pointer;
+}
+.main {
+    text-decoration: none;
+    color: #eeeeee;
+}
 .right__responsive {
     display: flex;
     justify-content: center;
