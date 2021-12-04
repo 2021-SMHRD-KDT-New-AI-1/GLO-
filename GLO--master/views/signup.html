@@ -10,59 +10,59 @@
 </head>
 <body>
     
-    <section id="signup">
+    <div id="signup">
 
-        <div class="section__container">
-            
-            <h1 class="signup__title">Sign up to GLO;</h1>
+        <div class="signup__right">
 
+            <div class="right__responsive">
+                <h1>GLO;</h1>
+            </div>
             <form class="signup__form">
-                <!-- <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname" value="John"><br>
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname" value="Doe"><br><br>
-                <input type="submit" value="Submit"> -->
-
+                <h1 class="right__signup">Sign up to GLO;</h1>
                 <div class="form__input">
-                    <input type="text" placeholder="ID" required>
-                    <input type="password" placeholder="Password" required>
-                    <input type="text" placeholder="생일 예) 20211129 `-` 없이 8자리">
+                    <input type="text" placeholder="ID" class="input__text" required>
+                    <input type="password" placeholder="Password" class="input__text" required>
+                    <input type="text" placeholder="나이" class="input__text">
                 </div>
+    
+                <div class="radio__container">
 
-                <div class="tit">
-                    <h3>성별</h3>
-                </div>
-                <div class="form__btn">
-                    <div class="btn">
-                        <input type="radio" name="name" value="m">
-                        <label for="m">남자</label>
+                    <div class="tit">
+                        <h3>성별</h3>
                     </div>
-                    <div class="btn">
-                        <input type="radio" name="name" value="w">
-                        <label for="w">여자</label>
+                    <div class="form__btn">
+                        <div class="btn">
+                            <input type="radio" name="name" value="m">
+                            <label for="m">남자</label>
+                        </div>
+                        <div class="btn">
+                            <input type="radio" name="name" value="w">
+                            <label for="w">여자</label>
+                        </div>
                     </div>
-                </div>
-                <div class="tit">
-                    <h3>상담경험</h3>
-                </div>
-                <div class="form__btn">
-                    <div class="btn">
-                        <input type="radio" name="hosp" value="y">
-                        <label for="y">경험 있음</label>
+                    <div class="tit">
+                        <h3>상담경험</h3>
                     </div>
-                    <div class="btn">
-                        <input type="radio" name="hosp" value="n">
-                        <label for="n">경험 없음</label>
+                    <div class="form__btn">
+                        <div class="btn">
+                            <input type="radio" name="hosp" value="y">
+                            <label for="y">경험 있음</label>
+                        </div>
+                        <div class="btn">
+                            <input type="radio" name="hosp" value="n">
+                            <label for="n">경험 없음</label>
+                        </div>
                     </div>
-                </div>
 
+                </div>
+    
                 <input class="submit__btn" type="submit" value="회원가입완료">
-
+                <span class="right__span">아이디가 있으시면, <a class="go" href="login.html">Login</a></span>
             </form>
 
         </div>
 
-    </section>
+    </div>
 
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 
