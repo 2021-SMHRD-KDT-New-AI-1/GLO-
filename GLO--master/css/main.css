@@ -162,7 +162,6 @@ span {
     padding: 8px 12px;
     margin: 0px 12px;
     font-size: var(--font-regular);
-    color: var(--color-light-green);
     background-color: var(--color-white);
     border: 1px solid transparent;
     border-radius: var(--size-border-radius);
@@ -177,6 +176,9 @@ span {
 .navbar__btn__login:hover {
     border: 1px solid var(--color-white);
     background-color: var(--color-semi-light-green);
+}
+.signup__btn {
+    color: var(--color-light-green);
 }
 .navbar__toggle__btn {
     position: absolute;

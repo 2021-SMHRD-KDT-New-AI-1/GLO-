@@ -132,12 +132,12 @@ span {
     padding: 16px 0px;
 }
 .navbar__logo {
-    width: 30%;
+    width: 20%;
     font-size: var(--font-medium);
     font-weight: var(--weight-smei-bold);
 }
 .navbar__menu {
-    width: 40%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,7 +155,7 @@ span {
     background-color: var(--color-semi-light-green);
 }
 .navbar__btns {
-    width: 30%;
+    width: 20%;
 }
 .navbar__btn__login,
 .navbar__btn__signup {
