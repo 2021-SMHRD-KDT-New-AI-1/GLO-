@@ -347,38 +347,32 @@ span {
     color: var(--color-dark-green);
 }
 .and__imgBox {
-    width: 584px;
-    height: 380px;
-    margin: 36px 0px;
-    background-image: url(../img/and__img.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-.and__icon {
-    width: 120px;
-    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid var(--color-light-green);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
+    width: 100%;
+    height: 400px;
 }
-.and__icon:hover {
+.and__img {
+    width: 18%;
+    height: 400px;
+    margin: 0px 12px;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: var(--animation-duration) ease-in-out;
+}
+.img1 {
+    background-image: url(../img/android1.png);
+}
+.img2 {
+    background-image: url(../img/android2.png);
+}
+.img3 {
+    background-image: url(../img/android3.png);
+}
+.and__img:hover {
     transform: scale(1.1, 1.1);
-    background-color: var(--color-light-green);
-}
-.and__icon i {
-    color: var(--color-light-green);
-    font-size: var(--font-medium);
-    padding: 40px;
-    cursor: pointer;
-}
-.and__icon i:hover {
-    transform: scale(1.1, 1.1);
-    color: var(--color-light-white);
 }
 
 /* footer */
