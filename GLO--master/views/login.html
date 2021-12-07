@@ -22,7 +22,7 @@
                 <div class="form">
                     <input type="text" placeholder="ID" class="input__id">
                     <input type="password" placeholder="Password" class="input__pw">
-                    <input type="submit" value="Log in" class="input__lg">
+                    <input type="submit" value="Log in" class="input__lg" onclick="login();return false;">
                     <button class="kakao__lg"><i class="fas fa-comment"></i>&nbsp;카카오계정으로 로그인</button>
                 </div>
                 <span class="right__span1">아이디가 없으시면, <a class="go" href="signup.html">Sign up</a></span>
@@ -32,7 +32,49 @@
 
     </div>
 
+
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+
+    <script>
+        function login(){
+            var id = document.querySelector('.input__id')
+            var pw = document.querySelector('.input__pw')
+
+            // if(id.value == "" || pw.value == ""){
+            //     alert("로그인 불가")
+            // }else{
+            //     location.href = 'main.html';
+                
+            //     //window.open('main.html');
+            // }
+
+            post_to_url("http://172.30.1.26:3002/login_w", {'id': id.value,'pw' : pw.value});
+
+            function post_to_url(path, params, method) {
+                    method = method || "post"; // Set method to post by default, if not specified.
+                    // The rest of this code assumes you are not using a library.
+                    // It can be made less wordy if you use one.
+                    var form = document.createElement("form");
+                    form.setAttribute("method", method);
+                    form.setAttribute("action", path);
+                    for(var key in params) {
+                        var hiddenField = document.createElement("input");
+                        hiddenField.setAttribute("type", "hidden");
+                        hiddenField.setAttribute("name", key);
+                        hiddenField.setAttribute("value", params[key]);
+                        form.appendChild(hiddenField);
+                    }
+                    document.body.appendChild(form);
+                    form.submit();
+                    // location.href = 'login.html';
+                
+                
+                
+                
+                }
+            
+        }
+    </script>
 
 </body>
 </html>
