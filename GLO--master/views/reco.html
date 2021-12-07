@@ -53,8 +53,8 @@
 
             <div class="reco__menu">
                 <ul class="menu__lists">
-                    <li class="list video" data-link="#category">
-                        <i class="far fa-play-circle" data-link="#category"></i>&nbsp;영상
+                    <li class="list video" data-link="#video">
+                        <i class="far fa-play-circle" data-link="#video"></i>&nbsp;영상
                     </li>
                     <li class="list music" data-link="#music">
                         <i class="fas fa-music" data-link="#music"></i>&nbsp;음악
@@ -82,7 +82,8 @@
                             <span class="item__author">John K</span>
                         </div>
                         <div class="des__like">
-                            <i class="far fa-heart"></i>
+                            <button class="btn__like1 invisible"><i class="fas fa-heart"></i></button>
+                            <button class="btn__unlike1"><i class="far fa-heart"></i></button>
                         </div>
                     </div>
                 </div>
@@ -94,14 +95,15 @@
                             <span class="item__author">John K</span>
                         </div>
                         <div class="des__like">
-                            <i class="far fa-heart"></i>
+                            <button class="btn__like2 invisible"><i class="fas fa-heart"></i></button>
+                            <button class="btn__unlike2"><i class="far fa-heart"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <button class="more__recos" data-link="#category">
-                <span class="btn__value" data-link="#category">추천 더 보기</span>
+            <button class="more__recos" data-link="#video">
+                <span class="btn__value" data-link="#video">추천 더 보기</span>
             </button>
 
         </div>
@@ -114,6 +116,7 @@
         <div class="section__container">
 
             <!-- 영상 -->
+            <div id="video"><h2><i class="far fa-play-circle"></i> 영상</h2></div>
             <div class="slide__title__box">
                 <h3 class="slide__title">나약해지지 마 동기부여</h3>
             </div>
@@ -124,6 +127,11 @@
                     <div class="slide__content"></div>
                     <div class="slide__content"></div>
                     <div class="slide__content"></div>
+                    <div class="slide__content"></div>
+                    <div class="slide__content"></div>
+                    <div class="slide__content"></div>
+                    <div class="slide__content"></div>
+
                 </div>
                 <i class="fas fa-chevron-right"></i>
             </div>
@@ -185,7 +193,8 @@
             </div>
 
             <!-- 음악 -->
-            <div id="music"></div>
+            <div id="music"><h2><i class="fas fa-music"></i> 음악</h2>
+            </div>
             <div class="slide__title__box">
                 <h3 class="slide__title">더 우울해지고 싶을 때</h3>
             </div>
@@ -261,8 +270,8 @@
     </section>
 
     <script src="../js/navbar.js" defer></script>
-    <script src="../js/reco.js" defer></script>
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
-
+    
 </body>
+    <script src="../js/reco.js" defer></script>
 </html>
