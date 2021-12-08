@@ -10,6 +10,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap" rel="stylesheet">
+    <script nonce="undefined" src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <style>
+        /* html,
+        body {
+          height: 100%;
+          width: 100%;
+        } */
+        #test{
+            height: 100%;
+            width: 100%;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+        #myChart {
+          height: 100%;
+          width: 100%;
+          min-height: 350px;
+          
+        }
+     
+        .zc-ref {
+          display: none;
+        }
+      </style>
 </head>
 <body>
     
@@ -53,9 +78,150 @@
         </div>
 
     </section>
+    <div id ="test">
+        <div id='myChart'><a class="zc-ref" href="https://www.zingchart.com/">Powered by ZingChart</a></div>
+    </div>
 
     <script src="../js/navbar.js" defer></script>
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+    <script>
+        ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "b55b025e438fa8a98e32482b5f768ff5"];
+        var myConfig = {
+          "type": "line",
+          "utc": true,
+          "title": {
+            "text": "설문결과",
+            "font-size": "24px",
+            "adjust-layout": true
+          },
+          "plotarea": {
+            "margin": "dynamic 45 60 dynamic",
+          },
+          "legend": {
+            "layout": "float",
+            "background-color": "none",
+            "border-width": 0,
+            "shadow": 0,
+            "align": "center",
+            "adjust-layout": true,
+            "toggle-action": "remove",
+            "item": {
+              "padding": 7,
+              "marginRight": 17,
+              "cursor": "hand"
+            }
+          },
+          "scale-x": {
+            "min-value": 0,
+            "shadow": 0,
+            "step": 1,
+            // "transform": {
+            //   "type": "date",
+            //   "all": "%D, %d %M<br />%h:%i %A",
+            //   "item": {
+            //     "visible": false
+            //   }
+            // },
+            "labels":['2021-12-07','2021-12-08','2021-12-09','2021-12-10','2021-12-11','2021-12-12','2021-12-13'],
+            "label": {
+              "visible": false
+            },
+            "minor-ticks": 0
+          },
+          "scale-y": {
+            "line-color": "#f6f7f8", //y축 선색
+            "shadow": 0,
+            "guide": {
+              "line-style": "dashed"
+            },
+            "label": {
+              "text": "우울 점수",
+              
+            },
+            "minor-ticks": 0,
+            "thousands-separator": ","
+          },
+          "crosshair-x": {
+            "line-color": "#efefef", // 그래프 에서 교차?선
+            "plot-label": {
+              "border-radius": "5px",
+              "border-width": "1px", // 그래프 올릴시 나오는 라벨의 속성
+              "border-color": "#f6f7f8",
+              "padding": "10px",
+              "font-weight": "bold"
+            },
+            "scale-label": {
+              "font-color": "#000",
+              "background-color": "#f6f7f8",//  축 마우스오버 라벨 색
+              "border-radius": "5px"
+            }
+          },
+          "tooltip": {
+            "visible": false
+          },
+          "plot": {
+            "highlight": true,
+            "tooltip-text": "%t views: %v<br>%k",
+            "shadow": 0,
+            "line-width": "2px", // 그래프 두께
+            "marker": { // 마커 모양 
+              "type": "circle",
+              "size": 3
+            },
+            "highlight-state": { // 버튼클릭 효과 라인 두께
+              "line-width": 3
+            },
+            "animation": { // 애니메이션 효과
+              "effect": 1,
+              "sequence": 2,
+              "speed": 100,
+            }
+          },
+          "series": [{
+              "values": [ // x축 값  그래프 여러개 일땐 시리즈 추가
+                49.0,
+                74.0,
+                70.0,
+                60.0,
+                12.6,
+                50.6,
+                30
+              ],
+              "text": "score", // 버튼 이름
+              "line-color": "#007790",// 그래프 잇는 선 색깔
+              "legend-item": {
+                "background-color": "#007790", // 버튼 색깔
+                "borderRadius": 5,
+                "font-color": "white",
+                
+                
+              },
+              "legend-marker": {
+                "visible": false
+              },
+              "marker": {// 그래프 선을 잇는 마커
+                "background-color": "#007790",
+                "border-width": 1,
+                "shadow": 0,
+                "border-color": "#69dbf1"
+              },
+              "highlight-marker": {//스코어 버튼 클릭시 하이라이트
+                "size": 6,
+                "background-color": "#007790",
+              }
+            },
+            
+            
+          ]
+        };
+     
+        zingchart.render({
+          id: 'myChart',
+          data: myConfig,
+          height: '100%',
+          width: '100%'
+        });
+      </script>
 
 </body>
 </html>
